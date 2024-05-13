@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-upper{
+    
+    height: 60vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-image: url("./images/pexels-roman-odintsov-4553124.jpg");
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div:first-child{
+        font-size: 3rem;
+    }
+
+    .image{
+        width:200px;
+        height:250px;
+        background-color: black;
+        background-image: url("./images/pexels-sebastian-palomino-933481-1853371.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: fill;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .logos{
+        display: flex;
+        gap: 0.5rem;
+        img{
+            width: 1rem;
+            height: 1rem;
+        } 
+    }
+}
+
+.main-lower{
+    display: flex;
+    height: 40vh;
+
+    .center{
+
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0.9;
+        padding: 10px;
+        background-image: url("./images/pexels-lkloeppel-466685.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: rgb(7, 2, 0);
+        font-weight: bolder;
+        h1{
+            margin-bottom: 2rem;
+        }
+    }
+    .center-2{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0.9;
+        padding: 10px;
+        background-image: url("./images/pexels-pixabay-268533.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: rgb(3, 3, 3);
+        font-weight: 900;
+        h2{
+            color: rgb(248, 242, 242);
+            margin-bottom: 1rem;
+        }
+  
+    }
+
+    .more{
+        height: 20.3vh;
+        background-image: url("./images/pexels-nout-gons-80280-378570.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .float-right{
+        padding: 1rem;
+        width: 120rem;
+        background-image: url("./images/magnifying-glass-2244781_1920.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: fill;
+     
+
+        ul{
+            list-style-type: none;
+            float: right;
+            
+            li{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media (width <=700px) {
+    .main-upper{
+        flex-direction: column;
+        height:auto;
+        row-gap: 2rem;
+        color: white;
+    }
+    .main-lower{
+        flex-direction: column;
+        height: auto;
+
+        .float-right{
+            width:100%;
+            ul{
+                float: left;
+            }
+        }
+    }
+}
